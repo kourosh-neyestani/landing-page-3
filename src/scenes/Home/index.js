@@ -6,6 +6,7 @@ import Blog from "./Blog";
 import About from "./About";
 import Intro from "./Intro";
 import Header from "./Header";
+import Resume from "./Resume";
 import Service from "./Service";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
@@ -23,6 +24,10 @@ const routes = [
     {
         path: "/about",
         component: <About />,
+    },
+    {
+        path: "/resume",
+        component: <Resume />,
     },
     {
         path: "/service",

@@ -48,70 +48,88 @@
 }
 
 /*------------------------------------
+    Element: Progress
+------------------------------------*/
+
+.el-progress {
+    position: relative;
+    margin-bottom: 60px;
+
+    span {
+        color: $text-color;
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    .el-icon {
+        margin-bottom: 25px;
+    }
+    .el-progress-count {
+        top: 12px;
+        right: 0;
+        position: absolute;
+    }
+    div {
+        height: 12px;
+        border-radius: 3px;
+        background-color: #eee;
+
+        .el-progress-bar {
+            width: 0;
+            background-size: 1rem 1rem;
+            background-color: $primary;
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            animation: progress-bar-stripes 1s linear infinite;
+        }
+    }
+}
+
+/*------------------------------------
     Element: Divider
 ------------------------------------*/
 
-/*------------------------------------
-Dividers
-------------------------------------*/
 .divider {
-    position: relative;
-}
-/* 
-* Divider - Style 1
-*/
-.divider-1:before {
-    right: -9px;
-}
-.divider-1:after {
-    right: -18px;
-}
-.divider-1-1:before {
-    right: -9px;
-}
-.divider-1-1:after {
-    right: -18px;
-}
-.divider-1-2:before {
-    left: -9px;
-}
-.divider-1-2:after {
-    left: -18px;
-}
-.divider-1 {
-    width: 63px;
-    height: 4px;
-    position: relative;
-    margin-bottom: 20px;
-    background: var(--primary);
-}
-.divider-1:before,
-.divider-1:after {
-    width: 5px;
-    height: 5px;
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    background-color: var(--primary);
-}
-.divider-1-reverse {
     width: 63px;
     height: 4px;
     display: inline-block;
     position: relative;
     margin: 0 9px 20px;
-    background-color: var(--primary);
-}
-.divider-1-reverse:before,
-.divider-1-reverse:after {
-    width: 5px;
-    height: 5px;
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    background-color: var(--primary);
-}
+    background-color: $primary;
 
+    &.divider-1 {
+        width: 63px;
+        height: 4px;
+        position: relative;
+        margin-bottom: 20px;
+        background: $primary;
+    }
+    &.divider-1-1 {
+        margin-right: 12px !important;
+    }
+    &.divider-1-2 {
+        &:before {
+            left: -9px;
+            width: 5px;
+            height: 5px;
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background-color: $primary;
+        }
+        &:after {
+            left: -17px;
+            width: 5px;
+            height: 5px;
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background-color: $primary;
+        }
+        &.divider-single {
+            left: 12px;
+        }
+    }
+}
 /*------------------------------------
     Element: Headline
 ------------------------------------*/
@@ -177,7 +195,7 @@ Dividers
     max-width: 600px;
 
     p {
-        font-size: 14px;        
+        font-size: 14px;
         margin-bottom: 20px;
     }
     h1 {
@@ -215,6 +233,19 @@ Dividers
         max-width: $md;
         text-align: center;
         margin: 0 auto 100px;
+
+        .el-icon {
+            .el-icon-title {
+                padding-top: 15px;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            &:before {
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
     }
     &.no-title p {
         padding-top: 7px;
@@ -343,13 +374,11 @@ Dividers
         padding-left: 15px;
     }
     .el-icon-label {
-        top: -3px;
-        opacity: 0.6;
-        display: block;
+        top: -1px;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 700;
         position: relative;
-        margin-bottom: 6px;
+        margin-bottom: 3px;
     }
     .el-icon-title {
         top: -2px;
