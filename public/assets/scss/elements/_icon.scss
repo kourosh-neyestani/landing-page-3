@@ -10,8 +10,9 @@
     .el-icon-label,
     .el-icon-title,
     .el-icon-subtitle {
-        display: block;
-        padding-left: 66px;
+        display: block; 
+        padding-top: 9px;
+        padding-left: 15px;
     }
     .el-icon-label {
         top: -3px;
@@ -24,7 +25,7 @@
     }
     .el-icon-title {
         top: -4px;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 700;
         position: relative;
         margin-bottom: 3px;
