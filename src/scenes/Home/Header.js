@@ -51,16 +51,6 @@ function Header() {
                 <button className="button button-menu" onClick={(e) => handleClick(e)}>
                     <span></span>
                 </button>
-                <ul className="header-nav">
-                    {links.map((item, index) => (
-                        <li key={index}>
-                            <NavLink to={`${url}${item.path}`} activeClassName="active">
-                                <span className="count">0{index + 1}</span>
-                                <span className="anchor">{item.title}</span>
-                            </NavLink>
-                        </li>
-                    ))}
-                </ul>
                 <div class="header-follow">
                     <ul>
                         <li>
