@@ -10,9 +10,11 @@
 
 body {
     font-size: 14px;
+    letter-spacing: 0.75px;
     font-family: "Poppins", sans-serif;
 }
 p {
+    font-weight: 500;
     color: $text-color;
     line-height: 1.8;
 }

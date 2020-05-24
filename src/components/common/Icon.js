@@ -15,7 +15,7 @@ function Icon(props) {
                     {subtitle} {small && <span className="el-icon-small">{small}</span>}
                 </span>
             )}
-        </div>
+        </div> 
     );
 }
 export default Icon;
