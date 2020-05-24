@@ -82,6 +82,44 @@ function Header() {
                     <p>Follow Me</p>
                 </div>
             </header>
+            <div className={`app-sidenav ${displaySidenav && "active"}`}>
+                <div className="sidenav-menu">
+                    <div className="logo">
+                        <Link to={url}>NUXT</Link>
+                    </div>
+                    <button className="button" onClick={(e) => handleClick(e)}></button>
+                    <ul className="sidenav-nav">
+                        {links.map((item, index) => (
+                            <li key={index} onClick={(e) => handleClick(e)}>
+                                <NavLink to={`${url}${item.path}`} activeClassName="active">
+                                    <span className="anchor">{item.title}</span>
+                                </NavLink>
+                            </li>
+                        ))}
+                    </ul>
+                    <div className="sidenav-links">
+                        <ul>
+                            <li>
+                                <a href="!#">
+                                    <FaTwitter className="icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="!#">
+                                    <FaGithub className="icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="!#">
+                                    <FaInstagram className="icon" />
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Follow Me</p>
+                    </div>
+                </div>
+                <span className="sidenav-close" />
+            </div>
         </>
     );
 }
