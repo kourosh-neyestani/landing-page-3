@@ -1,7 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
-// Components
-import Icon from "../../components/common/Icon";
 
 function About() {
     return (
