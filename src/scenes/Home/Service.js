@@ -71,7 +71,7 @@ function Service() {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     centerMode: true,
-                    centerPadding: 50
+                    centerPadding: 50,
                 },
             },
             {
@@ -80,7 +80,7 @@ function Service() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     centerMode: true,
-                    centerPadding: 100
+                    centerPadding: 100,
                 },
             },
             {
