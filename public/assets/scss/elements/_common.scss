@@ -28,7 +28,6 @@
                 button {
                     &:before {
                         color: $primary;
-                        border-color: $primary;
                         background-color: $primary;
                     }
                 }
@@ -232,7 +231,7 @@
     &.el-heading-center {
         max-width: $md;
         text-align: center;
-        margin: 0 auto 100px;
+        margin: 0 auto $space / 2;
 
         .el-icon {
             .el-icon-title {
