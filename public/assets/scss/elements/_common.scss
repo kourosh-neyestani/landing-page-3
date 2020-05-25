@@ -2,6 +2,35 @@
     Element: Tabs
 ------------------------------------*/
 
+.el-tabs {
+    ul {
+        display: block;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 30px;
+
+        li {
+            color: $base-1;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+            position: relative;
+            display: inline-block;
+            padding: 7px 15px;
+            border-radius: 30px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            &.active {
+                background-color: $primary;
+            }
+        }
+    }
+}
+
 /*------------------------------------
     Element: Slider
 ------------------------------------*/
