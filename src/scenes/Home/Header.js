@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import { useRouteMatch, NavLink, Link } from "react-router-dom";
 import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 
-// Components
-import DemoOptions from "../../components/common/DemoOptions";
-
 const links = [
     {
-        title: "Intro",
+        title: "Home",
         path: "/intro",
     },
     {
@@ -83,7 +80,7 @@ function Header() {
             <div className={`app-sidenav ${displaySidenav && "active"}`}>
                 <div className="sidenav-menu">
                     <div className="logo">
-                        <Link to={url}>NUXT</Link>
+                        <Link to={url}>Miro</Link>
                     </div>
                     <button className="button" onClick={(e) => handleClick(e)}></button>
                     <ul className="sidenav-nav">

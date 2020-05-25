@@ -18,7 +18,7 @@
     }
     .sidenav-menu {
         left: -100%;
-        width: 320px;
+        width: 345px;
         height: 100%;
         min-height: 100%;
         z-index: 10001;
@@ -88,13 +88,13 @@
             position: relative;
             margin-bottom: 15px;
             a {
-                color: $gray;
-                opacity: 0.6;
+                color: #fff;
                 display: block;
             }
             span {
                 top: 10px;
                 left: 18px;
+                opacity: .75;
                 font-size: 36px;
                 position: absolute;
                 white-space: nowrap;
@@ -111,8 +111,9 @@
             }
             &:hover {
                 a:not(.active) {
-                    opacity: 0.81;
-                    color: $base-1;
+                    span {
+                        opacity: 1;
+                    }
                 }
                 .count {
                     display: none;
@@ -124,6 +125,10 @@
             .active {
                 color: $base-1;
                 opacity: 1;
+
+                span {
+                    text-decoration: none;
+                }
             }
         }
     }
