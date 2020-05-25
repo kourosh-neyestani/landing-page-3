@@ -31,6 +31,10 @@ const links = [
         path: "/blog",
     },
     {
+        title: "Testimonial",
+        path: "/testimonial",
+    },
+    {
         title: "Contact",
         path: "/contact",
     },

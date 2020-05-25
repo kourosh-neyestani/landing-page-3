@@ -10,6 +10,7 @@ import Resume from "./Resume";
 import Service from "./Service";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
+import Testimonial from "./Testimonial";
 
 // Components
 import Helmet from "../../components/common/Helmet";
@@ -40,6 +41,10 @@ const routes = [
     {
         path: "/blog",
         component: <Blog />,
+    },
+    {
+        path: "/testimonial",
+        component: <Testimonial />,
     },
     {
         path: "/contact",
