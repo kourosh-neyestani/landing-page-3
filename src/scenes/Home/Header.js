@@ -51,7 +51,7 @@ function Header() {
         <>
             <header className="app-header app-header-1">
                 <div className="header-logo">
-                    <Link to={url}>Miro.</Link>
+                    <Link to={`url`.replace(/([^:])(\/\/+)/g, "$1/")}>Miro.</Link>
                 </div>
                 <button className="button button-menu" onClick={(e) => handleClick(e)}>
                     <span></span>
@@ -80,13 +80,13 @@ function Header() {
             <div className={`app-sidenav ${displaySidenav && "active"}`}>
                 <div className="sidenav-menu">
                     <div className="logo">
-                        <Link to={url}>Miro</Link>
+                        <Link to={`url`.replace(/([^:])(\/\/+)/g, "$1/")}>Miro</Link>
                     </div>
                     <button className="button" onClick={(e) => handleClick(e)}></button>
                     <ul className="sidenav-nav">
                         {links.map((item, index) => (
                             <li key={index} onClick={(e) => handleClick(e)}>
-                                <NavLink to={`${url}${item.path}`} activeClassName="active">
+                                <NavLink to={`${url}${item.path}`.replace(/([^:])(\/\/+)/g, "$1/")} activeClassName="active">
                                     <span className="anchor">{item.title}</span>
                                 </NavLink>
                             </li>

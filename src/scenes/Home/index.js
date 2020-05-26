@@ -43,6 +43,10 @@ const routes = [
         component: <Blog />,
     },
     {
+        path: "/blog/single-post",
+        component: <BlogSinglePost />,
+    },
+    {
         path: "/testimonial",
         component: <Testimonial />,
     },
@@ -51,6 +55,12 @@ const routes = [
         component: <Contact />,
     },
 ];
+
+function BlogSinglePost() {
+    return (
+        <h1>Hello World</h1>
+    )
+}
 
 function Home() {
     let { path } = useRouteMatch();

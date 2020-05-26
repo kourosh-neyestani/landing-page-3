@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
 import { Container } from "react-grid-system";
+import { Link, useRouteMatch } from "react-router-dom";
 // Components
 import Headline from "../../components/common/Headline";
 
@@ -72,6 +72,8 @@ function Blog() {
         ],
     };
 
+    const { path } = useRouteMatch();
+
     return (
         <section className="section section-blog section-blog-1">
             <div className="display-spacing">
@@ -80,8 +82,8 @@ function Blog() {
                     <Slider className="el-slider el-slider-plr--15" {...sliderSettings}>
                         {posts.map((item, index) => (
                             <div key={index} className="post-item">
-                                <Link to={`/home-2${item.link}`}>
-                                    <div class="post-image" style={{backgroundImage: `url(${item.image})`}}></div>
+                                <Link to={`${path}${item.link}`.replace(/([^:])(\/\/+)/g, "$1/")}>
+                                    <div class="post-image" style={{ backgroundImage: `url(${item.image})` }}></div>
                                 </Link>
                                 <div className="post-content">
                                     <div className="el-icon">
@@ -89,7 +91,7 @@ function Blog() {
                                     </div>
                                     <div className="post-data">
                                         <h4 className="post-title">
-                                            <Link to={`/home-1${item.link}`}>{item.title}</Link>
+                                            <Link to={`${path}${item.link}`.replace(/([^:])(\/\/+)/g, "$1/")}>{item.title}</Link>
                                         </h4>
                                         <div className="post-date">
                                             <i className="ti-time"></i>
