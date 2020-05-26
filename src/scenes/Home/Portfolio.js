@@ -12,6 +12,7 @@ const portfolio = [
         name: "All Worls",
         items: [
             {
+                id: 0,
                 title: "Crearive Design",
                 link: "/portfolio-details",
                 subtitle: "Web Design",
@@ -19,6 +20,7 @@ const portfolio = [
                 thumbnail: "/assets/images/portfolio/1-1.jpg",
             },
             {
+                id: 1,
                 title: "Crearive Design",
                 link: "/portfolio-details",
                 subtitle: "Web Design",
@@ -26,20 +28,23 @@ const portfolio = [
                 thumbnail: "/assets/images/portfolio/1-2.jpg",
             },
             {
+                id: 2,
                 title: "Crearive Design",
                 link: "/portfolio-details",
-                subtitle: "Mobile Apps",
+                subtitle: "Web Design",
                 src: "/assets/images/portfolio/1-3.jpg",
                 thumbnail: "/assets/images/portfolio/1-3.jpg",
             },
             {
+                id: 3,
                 title: "Crearive Design",
-                subtitle: "Mobile Apps",
+                subtitle: "Web Design",
                 link: "/portfolio-details",
                 src: "/assets/images/portfolio/1-4.jpg",
                 thumbnail: "/assets/images/portfolio/1-4.jpg",
             },
             {
+                id: 4,
                 title: "Crearive Design",
                 subtitle: "Mobile Apps",
                 link: "/portfolio-details",
@@ -47,20 +52,23 @@ const portfolio = [
                 thumbnail: "/assets/images/portfolio/1-5.jpg",
             },
             {
+                id: 5,
                 title: "Crearive Design",
-                subtitle: "Branding",
+                subtitle: "Mobile Apps",
                 link: "/portfolio-details",
                 src: "/assets/images/portfolio/1-6.jpg",
                 thumbnail: "/assets/images/portfolio/1-6.jpg",
             },
             {
+                id: 6,
                 title: "Crearive Design",
-                subtitle: "Branding",
+                subtitle: "Mobile Apps",
                 link: "/portfolio-details",
                 src: "/assets/images/portfolio/1-7.jpg",
                 thumbnail: "/assets/images/portfolio/1-7.jpg",
             },
             {
+                id: 7,
                 title: "Crearive Design",
                 subtitle: "Branding",
                 link: "/portfolio-details",
@@ -68,6 +76,7 @@ const portfolio = [
                 thumbnail: "/assets/images/portfolio/1-8.jpg",
             },
             {
+                id: 8,
                 title: "Crearive Design",
                 subtitle: "Branding",
                 link: "/portfolio-details",
@@ -75,6 +84,7 @@ const portfolio = [
                 thumbnail: "/assets/images/portfolio/1-9.jpg",
             },
             {
+                id: 9,
                 title: "Crearive Design",
                 subtitle: "Branding",
                 link: "/portfolio-details",
@@ -87,6 +97,7 @@ const portfolio = [
         name: "Web Design",
         items: [
             {
+                id: 0,
                 title: "Crearive Design",
                 link: "/portfolio-details",
                 subtitle: "Web Design",
@@ -94,6 +105,7 @@ const portfolio = [
                 thumbnail: "/assets/images/portfolio/1-1.jpg",
             },
             {
+                id: 1,
                 title: "Crearive Design",
                 link: "/portfolio-details",
                 subtitle: "Web Design",
@@ -101,6 +113,7 @@ const portfolio = [
                 thumbnail: "/assets/images/portfolio/1-2.jpg",
             },
             {
+                id: 2,
                 title: "Crearive Design",
                 link: "/portfolio-details",
                 subtitle: "Web Design",
@@ -108,9 +121,10 @@ const portfolio = [
                 thumbnail: "/assets/images/portfolio/1-3.jpg",
             },
             {
+                id: 3,
                 title: "Crearive Design",
-                link: "/portfolio-details",
                 subtitle: "Web Design",
+                link: "/portfolio-details",
                 src: "/assets/images/portfolio/1-4.jpg",
                 thumbnail: "/assets/images/portfolio/1-4.jpg",
             },
@@ -120,6 +134,7 @@ const portfolio = [
         name: "Mobile Apps",
         items: [
             {
+                id: 4,
                 title: "Crearive Design",
                 subtitle: "Mobile Apps",
                 link: "/portfolio-details",
@@ -127,6 +142,7 @@ const portfolio = [
                 thumbnail: "/assets/images/portfolio/1-5.jpg",
             },
             {
+                id: 5,
                 title: "Crearive Design",
                 subtitle: "Mobile Apps",
                 link: "/portfolio-details",
@@ -134,6 +150,7 @@ const portfolio = [
                 thumbnail: "/assets/images/portfolio/1-6.jpg",
             },
             {
+                id: 6,
                 title: "Crearive Design",
                 subtitle: "Mobile Apps",
                 link: "/portfolio-details",
@@ -146,6 +163,7 @@ const portfolio = [
         name: "Branding",
         items: [
             {
+                id: 7,
                 title: "Crearive Design",
                 subtitle: "Branding",
                 link: "/portfolio-details",
@@ -153,6 +171,7 @@ const portfolio = [
                 thumbnail: "/assets/images/portfolio/1-8.jpg",
             },
             {
+                id: 8,
                 title: "Crearive Design",
                 subtitle: "Branding",
                 link: "/portfolio-details",
@@ -160,13 +179,7 @@ const portfolio = [
                 thumbnail: "/assets/images/portfolio/1-9.jpg",
             },
             {
-                title: "Crearive Design",
-                subtitle: "Branding",
-                link: "/portfolio-details",
-                src: "/assets/images/portfolio/1-9.jpg",
-                thumbnail: "/assets/images/portfolio/1-9.jpg",
-            },
-            {
+                id: 9,
                 title: "Crearive Design",
                 subtitle: "Branding",
                 link: "/portfolio-details",
@@ -234,7 +247,7 @@ function Portfolio() {
                             <TabPanel key={categoryIndex}>
                                 <Row className="row-center mb--30">
                                     {category.items.map((item, index) => (
-                                        <Col key={index} xs={6} sm={6} md={6} lg={3} xl={3} onClick={() => toggleLightbox(index)}>
+                                        <Col key={index} xs={6} sm={6} md={6} lg={3} xl={3} onClick={() => toggleLightbox(item.id)}>
                                             <div className="portfolio-item">
                                                 <div className="portfolio-card">
                                                     <div className="image overlay-image" style={{ backgroundImage: `url(${item.src})` }} />
