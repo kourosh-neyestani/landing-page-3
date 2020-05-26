@@ -64,7 +64,7 @@ function Testimonial() {
             <div className="display-spacing">
                 <Container className="container">
                     <Headline label="testimonial" title="Customer’s Stories" divider_1={true} position="center" />
-                    <Row className="mb--30">
+                    <Row className="mb--45">
                         <Col lg={6} xl={6} className="mb-30">
                             <Slider className="el-slider" {...sliderSettings}>
                                 {testimonial1.map((item, index) => (
@@ -100,6 +100,11 @@ function Testimonial() {
                             </Slider>
                         </Col>
                     </Row>
+                    <div class="div-center text-center lets-work">
+                        <a href="/#" class="button button-md button-primary">
+                            let's work together
+                        </a>
+                    </div>
                 </Container>
             </div>
         </section>

@@ -79,7 +79,7 @@ const experience = [
 function Resume() {
     return (
         <section className="section section-resume section-resume-1">
-            <div className="display-screen">
+            <div className="display-spacing">
                 <header className="el-heading el-heading-center">
                     <div className="el-icon">
                         <h2 className="el-icon-title">
