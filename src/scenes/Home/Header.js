@@ -56,21 +56,21 @@ function Header() {
                 <button className="button button-menu" onClick={(e) => handleClick(e)}>
                     <span></span>
                 </button>
-                <div class="header-follow">
+                <div className="header-follow">
                     <ul>
                         <li>
                             <a href="/#">
-                                <i class="ti-twitter-alt"></i>
+                                <i className="ti-twitter-alt"></i>
                             </a>
                         </li>
                         <li>
                             <a href="/#">
-                                <i class="ti-github"></i>
+                                <i className="ti-github"></i>
                             </a>
                         </li>
                         <li>
                             <a href="/#">
-                                <i class="ti-vimeo-alt"></i>
+                                <i className="ti-vimeo-alt"></i>
                             </a>
                         </li>
                     </ul>

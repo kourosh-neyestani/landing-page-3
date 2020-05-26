@@ -83,7 +83,7 @@ function Blog() {
                         {posts.map((item, index) => (
                             <div key={index} className="post-item">
                                 <Link to={`${path}${item.link}`.replace(/([^:])(\/\/+)/g, "$1/")}>
-                                    <div class="post-image" style={{ backgroundImage: `url(${item.image})` }}></div>
+                                    <div className="post-image" style={{ backgroundImage: `url(${item.image})` }}></div>
                                 </Link>
                                 <div className="post-content">
                                     <div className="el-icon">

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link, useRouteMatch } from "react-router-dom";
 import { Container, Row, Col } from "react-grid-system";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Carousel, { Modal, ModalGateway } from "react-images";

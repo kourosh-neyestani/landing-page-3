@@ -68,12 +68,12 @@ function Testimonial() {
                         <Col lg={6} xl={6} className="mb-30">
                             <Slider className="el-slider" {...sliderSettings}>
                                 {testimonial1.map((item, index) => (
-                                    <div class="testimonial-item testimonial-clients">
-                                        <div class="type">
+                                    <div key={index} className="testimonial-item testimonial-clients">
+                                        <div className="type">
                                             <span>{item.type}</span>
                                         </div>
                                         <p>{item.content}</p>
-                                        <div class="author">
+                                        <div className="author">
                                             <img src={item.avatar} alt="Relevant textual alternative" />
                                             <h4>{item.name}</h4>
                                             <h5>{item.post}</h5>
@@ -85,12 +85,12 @@ function Testimonial() {
                         <Col lg={6} xl={6} className="mb-30">
                             <Slider className="el-slider" {...sliderSettings}>
                                 {testimonial2.map((item, index) => (
-                                    <div class="testimonial-item testimonial-clients">
-                                        <div class="type">
+                                    <div key={index} className="testimonial-item testimonial-clients">
+                                        <div className="type">
                                             <span>{item.type}</span>
                                         </div>
                                         <p>{item.content}</p>
-                                        <div class="author">
+                                        <div className="author">
                                             <img src={item.avatar} alt="Relevant textual alternative" />
                                             <h4>{item.name}</h4>
                                             <h5>{item.post}</h5>
@@ -100,10 +100,10 @@ function Testimonial() {
                             </Slider>
                         </Col>
                     </Row>
-                    <div class="div-center text-center lets-work">
-                        <a href="/#" class="button button-md button-primary">
+                    <div className="div-center text-center lets-work">
+                        <button type="button" className="button button-md button-primary">
                             let's work together
-                        </a>
+                        </button>
                     </div>
                 </Container>
             </div>
