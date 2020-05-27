@@ -385,7 +385,7 @@
     top: 0;
     width: 100vh;
     height: 100vh;
-    opacity: .3;
+    opacity: 0.3;
     padding-top: 50%;
     padding-left: 50%;
     position: absolute;
@@ -403,13 +403,14 @@
     .el-circle-side {
         left: 0;
         right: 0;
-        opacity: .45;
+        opacity: 0.45;
         border-radius: 0 !important;
     }
 }
 /*------------------------------------
     Element: List
 ------------------------------------*/
+
 .el-list-check {
     list-style: none;
     padding: 0;
@@ -428,6 +429,7 @@
         }
     }
 }
+
 /*------------------------------------
     Element: Go Back
 ------------------------------------*/
@@ -443,6 +445,10 @@
         margin-right: 6px;
     }
 }
+
+/*------------------------------------
+    Element: Icon
+------------------------------------*/
 
 .el-icon {
     display: block;
