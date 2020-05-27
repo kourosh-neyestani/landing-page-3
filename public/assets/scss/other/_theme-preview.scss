@@ -125,8 +125,7 @@
             .holder {
                 width: 100%;
                 overflow: hidden;
-                padding-top: 60%;
-                background-color: $primary;
+                padding-top: 52%;
 
                 img {
                     top: 0;
@@ -259,7 +258,9 @@
         p {
             color: $black;
             opacity: 0.75;
-            color: $base-0;
+            color: $base-1;
+            font-size: .9em;
+            font-weight: 400;
         }
         .image {
             top: 30px;
