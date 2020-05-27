@@ -10,7 +10,7 @@ function About() {
                         <Hidden xs sm md>
                             <Col lg={5}>
                                 <div className="about-image">
-                                    <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/about/1-1.jpg)` }}></div>
+                                    <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/about/2-1.jpg)` }}></div>
                                 </div>
                             </Col>
                         </Hidden>
