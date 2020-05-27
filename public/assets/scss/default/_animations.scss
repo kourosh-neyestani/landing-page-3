@@ -78,3 +78,14 @@
         background-position: 0 0;
     }
 }
+@keyframes MoveUpDown {
+    0% {
+        top: -2px;
+    }
+    50% {
+        top: 0;
+    }
+    100% {
+        top: 3px;
+    }
+}

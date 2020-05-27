@@ -23,7 +23,6 @@
 }
 
 // Hero 4
-
 .section-hero-4 {
     .el-slider {
         width: 100%;
@@ -44,6 +43,25 @@
     }
     .display-center {
         z-index: 3;
+    }
+}
+
+// Hero 5
+.section-hero-5 {
+    .el-icon {
+        .icon {
+            position: relative;
+            margin-left: 3px;
+            animation: MoveUpDown 1s linear infinite;
+        }
+    }
+    .el-heading {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        h1 {
+            font-size: 42px;
+        }
     }
 }
 

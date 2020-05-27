@@ -5,76 +5,73 @@ import { Container } from "react-grid-system";
 
 function Intro() {
     return (
-        <section className="section section-hero section-hero-1 overlay-image" style={{ backgroundImage: `url(/assets/images/hero/1-1.jpg)` }}>
+        <section className="section section-hero section-hero-5 overlay-image" style={{ backgroundImage: `url(/assets/images/hero/5-1.jpg)` }}>
             <Particles
                 params={{
                     particles: {
                         number: {
-                            value: 300,
+                            value: 120,
                             density: {
                                 enable: true,
+                                value_area: 1500,
                             },
                         },
-                        size: {
-                            value: 5,
-                            random: true,
+                        line_linked: {
+                            enable: true,
+                            opacity: 0.02,
                         },
                         move: {
-                            direction: "bottom",
-                            out_mode: "out",
+                            direction: "right",
+                            speed: 0.05,
                         },
-                        line_linked: {
-                            enable: false,
+                        size: {
+                            value: 1,
+                        },
+                        opacity: {
+                            anim: {
+                                enable: true,
+                                speed: 1,
+                                opacity_min: 0.05,
+                            },
                         },
                     },
                     interactivity: {
                         events: {
-                            onhover: {
-                                enable: true,
-                                mode: "bubble"
-                            },
                             onclick: {
                                 enable: true,
-                                mode: "repulse"
-                            }
+                                mode: "push",
+                            },
                         },
                         modes: {
-                            bubble: {
-                                distance: 250,
-                                duration: 2,
-                                size: 3,
+                            push: {
+                                particles_nb: 1,
                             },
-                            repulse: {
-                                distance: 400,
-                                duration: 4
-                            }
-                        }
-                    }
+                        },
+                    },
+                    retina_detect: true,
                 }}
+                className="el-particles"
             />
             <div className="display-center">
                 <Container>
                     <div className="el-heading">
-                        <p className="el-icon">
-                            <span className="el-icon-title">I'm Miranda Smith.</span>
-                        </p>
                         <h1>
                             I'm a{" "}
                             <TextLoop>
-                                <span>UI/UX Designer</span>
+                                <span>Digital Product Designer</span>
                                 <span>Graphic Designer</span>
                                 <span>Web Developer</span>
                             </TextLoop>
                             <br />
-                            Based in Los Angeles
+                            I create Websites and Applications.
+                            <br />
+                            Based in New York, USA.
                         </h1>
-                        <button className="button button-lg button-primary">
-                            <span className="wave"></span>
-                            <span className="text">My Portfolio</span>
-                        </button>
-                        <button className="button button-lg">
-                            <span className="text">Read More</span>
-                        </button>
+                        <div className="el-icon">
+                            <p className="el-icon-title">
+                                About Me <span className="icon ti-arrow-down" />
+                            </p>
+                        </div>
                     </div>
                 </Container>
             </div>
