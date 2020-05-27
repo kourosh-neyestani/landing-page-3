@@ -8,28 +8,28 @@ import Headline from "../../components/common/Headline";
 const posts = [
     {
         title: "What has happened to all of the Design ideas?",
-        image: "/assets/images/blog/1-1.jpg",
+        image: "/assets/images/blog/4-1.jpg",
         date: "May 15th, 2019",
         link: "/single-post",
         icon: "ti-light-bulb",
     },
     {
         title: "The Best Sale Marketer Of The Next Year",
-        image: "/assets/images/blog/1-2.jpg",
+        image: "/assets/images/blog/4-2.jpg",
         date: "May 18th, 2019",
         link: "/single-post",
         icon: "ti-mobile",
     },
     {
         title: "What gets in the way of greate Stategy",
-        image: "/assets/images/blog/1-3.jpg",
+        image: "/assets/images/blog/4-3.jpg",
         date: "May 21h, 2019",
         link: "/single-post",
         icon: "ti-paint-bucket",
     },
     {
         title: "How to create great logo for your Business",
-        image: "/assets/images/blog/1-4.jpg",
+        image: "/assets/images/blog/4-4.jpg",
         date: "May 21th, 2019",
         link: "/single-post",
         icon: "ti-light-bulb",
