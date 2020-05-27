@@ -7,6 +7,7 @@ import "./index.scss";
 // Scenes
 import Home from "./scenes/Home";
 import Home2 from "./scenes/Home2";
+import Home3 from "./scenes/Home3";
 // Components
 import Error404 from "./components/common/Error404";
 import RedirectAs404 from "./components/common/RedirectAs404";
@@ -20,6 +21,7 @@ const Root = () => {
                 </Route>
                 <Route path="/home-1" component={Home} />
                 <Route path="/home-2" component={Home2} />
+                <Route path="/home-3" component={Home3} />
                 <Route component={RedirectAs404} />
             </Switch>
         </div>
