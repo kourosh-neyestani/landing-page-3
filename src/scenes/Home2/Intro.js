@@ -16,11 +16,11 @@ function Intro() {
                             },
                         },
                         size: {
-                            value: 5,
+                            value: 3,
                             random: true,
                         },
                         move: {
-                            direction: "bottom",
+                            direction: "top",
                             out_mode: "out",
                         },
                         line_linked: {

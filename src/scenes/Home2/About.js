@@ -33,7 +33,7 @@ function About() {
                                                 <span className="el-icon-icon ti-ruler-pencil"></span>
                                             </div>
                                             <div className="content">
-                                                <h5>Web design</h5>
+                                                <h5>Makeup</h5>
                                                 <p>Lorem ipsum dolor sit amet Consectetur adipisicing elit.</p>
                                             </div>
                                         </div>
@@ -44,7 +44,7 @@ function About() {
                                                 <span className="el-icon-icon ti-image"></span>
                                             </div>
                                             <div className="content">
-                                                <h5>Graphic Design</h5>
+                                                <h5>Pedicure</h5>
                                                 <p>Lorem ipsum dolor sit amet Consectetur adipisicing elit.</p>
                                             </div>
                                         </div>
@@ -55,7 +55,7 @@ function About() {
                                                 <span className="el-icon-icon ti-brush-alt"></span>
                                             </div>
                                             <div className="content">
-                                                <h5>Development</h5>
+                                                <h5>Makeup</h5>
                                                 <p>Lorem ipsum dolor sit amet Consectetur adipisicing elit.</p>
                                             </div>
                                         </div>
@@ -66,7 +66,7 @@ function About() {
                                                 <span className="el-icon-icon ti-ruler-pencil"></span>
                                             </div>
                                             <div className="content">
-                                                <h5>Mobile Apps</h5>
+                                                <h5>Manicure</h5>
                                                 <p>Lorem ipsum dolor sit amet Consectetur adipisicing elit.</p>
                                             </div>
                                         </div>
@@ -77,7 +77,7 @@ function About() {
                                                 <span className="el-icon-icon ti-ruler-pencil"></span>
                                             </div>
                                             <div className="content">
-                                                <h5>UI/UX Designer</h5>
+                                                <h5>Makeup</h5>
                                                 <p>Lorem ipsum dolor sit amet Consectetur adipisicing elit.</p>
                                             </div>
                                         </div>
@@ -88,7 +88,7 @@ function About() {
                                                 <span className="el-icon-icon ti-mobile"></span>
                                             </div>
                                             <div className="content">
-                                                <h5>Marketing Online</h5>
+                                                <h5>Pedicure</h5>
                                                 <p>Lorem ipsum dolor sit amet Consectetur adipisicing elit.</p>
                                             </div>
                                         </div>

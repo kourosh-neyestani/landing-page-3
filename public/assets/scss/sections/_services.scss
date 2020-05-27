@@ -42,6 +42,15 @@
     }
 }
 
+// Service 3
+.section-service-3 {
+    .service-wrap {
+        .service-item {
+            background-color: $primary;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .section-service {
         .service-wrap {

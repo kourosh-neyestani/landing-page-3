@@ -94,7 +94,7 @@ function Service() {
     };
 
     return (
-        <section className="section section-service section-service-5 display-fit-screen">
+        <section className="section section-service section-service-3 display-fit-screen">
             <div className="display-spacing mb-0">
                 <Container>
                     <header className="el-heading el-heading-center">
