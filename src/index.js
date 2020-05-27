@@ -2,13 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
-
 // Stylesheet
 import "./index.scss";
-
 // Scenes
 import Home from "./scenes/Home";
-
 // Components
 import Error404 from "./components/common/Error404";
 import RedirectAs404 from "./components/common/RedirectAs404";

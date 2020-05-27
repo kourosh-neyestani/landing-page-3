@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-grid-system";
+import { Container, Hidden, Row, Col } from "react-grid-system";
 
 function Contact() {
     return (
@@ -8,11 +8,13 @@ function Contact() {
                 <div className="display-spacing">
                     <Container>
                         <Row>
-                            <Col lg={5}>
-                                <div className="contact-image">
-                                    <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/contact/1-1.jpg)` }}></div>
-                                </div>
-                            </Col>
+                            <Hidden xs sm md>
+                                <Col lg={5}>
+                                    <div className="contact-image">
+                                        <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/contact/1-1.jpg)` }}></div>
+                                    </div>
+                                </Col>
+                            </Hidden>
                             <Col lg={7}>
                                 <div className="contact-content">
                                     <header className="el-heading">
