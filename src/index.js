@@ -10,6 +10,7 @@ import Home2 from "./scenes/Home2";
 import Home3 from "./scenes/Home3";
 import Home4 from "./scenes/Home4";
 import Home5 from "./scenes/Home5";
+import Home6 from "./scenes/Home6";
 // Components
 import Error404 from "./components/common/Error404";
 import RedirectAs404 from "./components/common/RedirectAs404";
@@ -26,6 +27,7 @@ const Root = () => {
                 <Route path="/home-3" component={Home3} />
                 <Route path="/home-4" component={Home4} />
                 <Route path="/home-5" component={Home5} />
+                <Route path="/home-6" component={Home6} />
                 <Route component={RedirectAs404} />
             </Switch>
         </div>
