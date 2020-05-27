@@ -1,11 +1,11 @@
 import React from "react";
-import TextLoop from "react-text-loop";
 import Particles from "react-particles-js";
 import { Container } from "react-grid-system";
 
 function Intro() {
     return (
-        <section className="section section-hero section-hero-1 overlay-image" style={{ backgroundImage: `url(/assets/images/hero/2-1.jpg)` }}>
+        <section className="section section-hero section-hero-2 overlay-image" style={{ backgroundImage: `url(/assets/images/hero/2-1.jpg)` }}>
+            <span class="el-circle-side right"></span>
             <Particles
                 params={{
                     particles: {
@@ -31,12 +31,12 @@ function Intro() {
                         events: {
                             onhover: {
                                 enable: true,
-                                mode: "bubble"
+                                mode: "bubble",
                             },
                             onclick: {
                                 enable: true,
-                                mode: "repulse"
-                            }
+                                mode: "repulse",
+                            },
                         },
                         modes: {
                             bubble: {
@@ -46,33 +46,28 @@ function Intro() {
                             },
                             repulse: {
                                 distance: 400,
-                                duration: 4
-                            }
-                        }
-                    }
+                                duration: 4,
+                            },
+                        },
+                    },
                 }}
             />
             <div className="display-center">
                 <Container>
                     <div className="el-heading">
                         <p className="el-icon">
-                            <span className="el-icon-title">I'm Miranda Smith.</span>
+                            <span className="el-icon-title">Welcome on our Beauty Clinic</span>
                         </p>
                         <h1>
-                            I'm a{" "}
-                            <TextLoop>
-                                <span>UI/UX Designer</span>
-                                <span>Graphic Designer</span>
-                                <span>Web Developer</span>
-                            </TextLoop>
+                            We make hair
                             <br />
-                            Based in Los Angeles
+                            beautiful & unique
                         </h1>
                         <button className="button button-lg button-primary">
                             <span className="wave"></span>
-                            <span className="text">My Portfolio</span>
+                            <span className="text">Book a visit</span>
                         </button>
-                        <button className="button button-lg">
+                        <button className="button button-lg button-dark">
                             <span className="text">Read More</span>
                         </button>
                     </div>

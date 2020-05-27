@@ -10,3 +10,22 @@
         }
     }
 }
+
+// Hero 2
+.section-hero-2 {
+    .el-heading {
+        float: right;
+
+        .el-icon {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section-hero-2 {
+        .el-heading {
+            float: inherit !important;
+        }
+    }
+}

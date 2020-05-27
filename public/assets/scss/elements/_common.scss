@@ -286,7 +286,7 @@
             margin-bottom: 20px;
         }
         h1 {
-            font-size: 30px !important;
+            font-size: 42px !important;
             line-height: 1.4;
         }
     }
@@ -378,14 +378,41 @@
     }
 }
 /*------------------------------------
-    Element: Icon
+    Element: Circle-Side
 ------------------------------------*/
+
+.el-circle-side {
+    top: 0;
+    width: 100vh;
+    height: 100vh;
+    opacity: .3;
+    padding-top: 50%;
+    padding-left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $base-0;
+
+    &.left {
+        left: 7;
+    }
+    &.right {
+        right: 7%;
+    }
+}
+@media (max-width: 768px) {
+    .el-circle-side {
+        left: 0;
+        right: 0;
+        opacity: .45;
+        border-radius: 0 !important;
+    }
+}
 /*------------------------------------
     Element: List
 ------------------------------------*/
 .el-list-check {
     list-style: none;
-    padding: 0; 
+    padding: 0;
     margin: 0 15px 20px;
 
     li {
