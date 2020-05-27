@@ -10,7 +10,7 @@ function About() {
                         <Hidden xs sm md>
                             <Col lg={5}>
                                 <div className="about-image">
-                                    <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/about/2-1.jpg)` }}></div>
+                                    <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/about/3-1.jpg)` }}></div>
                                 </div>
                             </Col>
                         </Hidden>
@@ -18,10 +18,10 @@ function About() {
                             <div className="about-content">
                                 <header className="el-heading">
                                     <h2 className="el-icon">
-                                        <span className="el-icon-title">ABOUT ME</span>
+                                        <span className="el-icon-title">Hello</span>
                                     </h2>
                                     <h3>
-                                        <span>Hello, I am Miranda Smith.</span>
+                                        <span>I am John Woo.</span>
                                     </h3>
                                     <div className="divider divider-1"></div>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim enim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
