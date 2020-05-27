@@ -22,6 +22,31 @@
     }
 }
 
+// Hero 4
+
+.section-hero-4 {
+    .el-slider {
+        width: 100%;
+        height: 100vh;
+
+        .slide {
+            .image {
+                height: 100vh;
+            }
+        }
+        .slick-dots {
+            z-index: 6;
+            bottom: 60px !important;
+        }
+    }
+    .el-particles {
+        opacity: .3;
+    }
+    .display-center {
+        z-index: 3;
+    }
+}
+
 @media (max-width: 768px) {
     .section-hero-2 {
         .el-heading {

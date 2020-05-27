@@ -1,79 +1,63 @@
 import React from "react";
-import TextLoop from "react-text-loop";
+import Slider from "react-slick";
 import Particles from "react-particles-js";
 import { Container } from "react-grid-system";
 
 function Intro() {
+    const sliderSettings = {
+        dots: true,
+        fade: true,
+        arrows: false,
+        autoplay: true,
+    };
     return (
-        <section className="section section-hero section-hero-1 overlay-image" style={{ backgroundImage: `url(/assets/images/hero/1-1.jpg)` }}>
+        <section className="section section-hero section-hero-4 display-fit-screen">
             <Particles
                 params={{
                     particles: {
                         number: {
-                            value: 300,
-                            density: {
-                                enable: true,
-                            },
+                            value: 120,
                         },
                         size: {
-                            value: 5,
-                            random: true,
-                        },
-                        move: {
-                            direction: "bottom",
-                            out_mode: "out",
-                        },
-                        line_linked: {
-                            enable: false,
+                            value: 3,
                         },
                     },
                     interactivity: {
                         events: {
                             onhover: {
                                 enable: true,
-                                mode: "bubble"
+                                mode: "repulse",
                             },
-                            onclick: {
-                                enable: true,
-                                mode: "repulse"
-                            }
                         },
-                        modes: {
-                            bubble: {
-                                distance: 250,
-                                duration: 2,
-                                size: 3,
-                            },
-                            repulse: {
-                                distance: 400,
-                                duration: 4
-                            }
-                        }
-                    }
+                    },
                 }}
+                className="el-particles"
             />
+            <Slider className="el-slider" {...sliderSettings}>
+                <div className="slide">
+                    <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/hero/4-1.jpg)` }}></div>
+                </div>
+                <div className="slide">
+                    <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/hero/4-2.jpg)` }}></div>
+                </div>
+            </Slider>
             <div className="display-center">
                 <Container>
                     <div className="el-heading">
                         <p className="el-icon">
-                            <span className="el-icon-title">I'm Miranda Smith.</span>
+                            <span className="el-icon-title">We are MIRO.</span>
                         </p>
                         <h1>
-                            I'm a{" "}
-                            <TextLoop>
-                                <span>UI/UX Designer</span>
-                                <span>Graphic Designer</span>
-                                <span>Web Developer</span>
-                            </TextLoop>
+                            Our Passion.
                             <br />
-                            Based in Los Angeles
+                            Our Music. Our Life.
                         </h1>
                         <button className="button button-lg button-primary">
-                            <span className="wave"></span>
                             <span className="text">My Portfolio</span>
                         </button>
-                        <button className="button button-lg">
-                            <span className="text">Read More</span>
+                        <button className="button button-lg bg-base-0">
+                            <span className="wave"></span>
+                            <span className="text text-light">Read More</span>
                         </button>
                     </div>
                 </Container>
