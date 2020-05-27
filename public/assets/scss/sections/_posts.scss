@@ -56,3 +56,63 @@
         }
     }
 }
+
+/*------------------------------------
+    Section: Single Post
+------------------------------------*/
+
+.section-single-post {
+    .post {
+        position: relative;
+
+        .post-head {
+            margin-bottom: 30px;
+
+            .post-info {
+                h1 {
+                    font-size: 45px;
+                }
+                .author {
+                    font-weight: bolder;
+                }
+                .category {
+                    font-weight: bolder;
+                }
+                .el-go-back {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .post-body {
+            .post-image {
+                margin-bottom: 30px;
+            }
+            .post-tags {
+                display: block;
+
+                ul {
+                    list-style: none;
+                    display: inline-block;
+                    padding: 0 0 0 15px;
+
+                    li {
+                        display: inline-block;
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-right: 9px;
+                        margin-bottom: 3px;
+                        &:before {
+                            content: "#";
+                        }
+                    }
+                }
+                > span {
+                    font-weight: 700;
+                }
+            }
+            .post-content {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
