@@ -58,6 +58,24 @@ function Header() {
                 <button className="button button-menu" onClick={(e) => handleClick(e)}>
                     <span></span>
                 </button>
+                <ul className="header-dots">
+                    {links.map((item, index) => (
+                        <li key={index}>
+                            <NavLink to={`${url}${item.path}`} activeClassName="active">
+                                <span className="circle"></span>
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+                <ul className="header-menu">
+                    {links.map((item, index) => (
+                        <li key={index}>
+                            <NavLink to={`${url}${item.path}`} activeClassName="active">
+                                <span className="anchor">{item.title}</span>
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
                 <div className="header-follow">
                     <ul>
                         <li>

@@ -15,6 +15,67 @@
         font-weight: 700;
         position: absolute;
     }
+    .header-menu {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        position: fixed;
+        list-style: none;
+        padding-left: 30px;
+        margin-bottom: 0;
+        box-shadow: inset 0px -18px 18px -2px $base-0;
+
+        li {
+            font-size: 12px;
+            margin-right: 25px;
+            display: inline-block;
+            padding: 9px 0 6px;
+
+            .active {
+                color: $primary;
+                font-weight: 700;
+            }
+        }
+    }
+    .header-dots {
+        top: 50%;
+        right: 30px;
+        width: 20px;
+        height: 300px;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        position: fixed;
+        list-style: none;
+        margin-top: -150px;
+
+        li {
+            margin-bottom: 14px;
+
+            a {
+                display: block;
+
+                .circle {
+                    width: 10px;
+                    height: 10px;
+                    display: block;
+                    border-radius: 50%;
+                    border: 1px solid $base-1;
+                }
+                &.active {
+                    .circle {
+                        border-color: $primary;
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+    }
     .button-menu {
         top: 10px;
         right: 30px;
