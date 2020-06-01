@@ -22,6 +22,8 @@
         text-align: center;
         position: fixed;
         list-style: none;
+        overflow: auto;
+        white-space: nowrap;
         padding-left: 30px;
         margin-bottom: 0;
         box-shadow: inset 0px -18px 18px -2px $base-0;
