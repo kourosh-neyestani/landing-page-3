@@ -268,3 +268,13 @@
         @include bg-gradient($i);
     }
 }
+@media (max-width: 992px) {
+    .display-spacing {
+        padding-top: 90px !important;
+    }
+}
+@media (max-width: 768px) {
+    .display-spacing {
+        padding-top: 90px !important;
+    }
+}
