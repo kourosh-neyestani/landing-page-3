@@ -5,6 +5,8 @@
 // Header 1
 .app-header-1 {
     z-index: 99;
+    max-width: 100%;
+    overflow-x: hidden;
     position: fixed;
 
     .header-logo {
@@ -170,7 +172,9 @@
             top: 15px;
             left: 15px;
         }
-
+        .header-dots {
+            right: 15px;
+        }
         .button-menu {
             top: 15px;
             right: 15px;
@@ -204,7 +208,9 @@
             top: 7px;
             right: 10px;
         }
-
+        .header-dots {
+            right: 0 !important;
+        }
         .header-follow {
             left: 10px;
         }
