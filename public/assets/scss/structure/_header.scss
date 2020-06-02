@@ -5,8 +5,8 @@
 // Header 1
 .app-header-1 {
     z-index: 99;
+    width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
     position: fixed;
 
     .header-logo {
@@ -28,18 +28,25 @@
         white-space: nowrap;
         padding-left: 30px;
         margin-bottom: 0;
-        box-shadow: inset 0px -18px 18px -2px $base-0;
+        background: $base-1;
+        -ms-overflow-style: none;
+        border-top: 1px solid $primary;
+        border-bottom: 1px solid $primary;
 
         li {
+            color: $base-0;
             font-size: 12px;
             margin-right: 25px;
             display: inline-block;
-            padding: 9px 0 6px;
+            padding: 7px 0 6px;
 
             .active {
                 color: $primary;
                 font-weight: 700;
             }
+        }
+        &::-webkit-scrollbar {
+            display: none;
         }
     }
     .header-dots {
@@ -86,7 +93,7 @@
         width: 50px;
         height: 50px;
         z-index: 99;
-        position: fixed;
+        position: absolute;
         padding-top: 12px;
 
         span {
@@ -188,22 +195,12 @@
 
 @media (max-width: 992px) {
     .app-header {
-        &:after {
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 60px;
-            opacity: 0.75;
-            content: "";
-            position: absolute;
-            background-color: $primary;
-        }
+        position: absolute !important;
 
         .header-logo {
             top: 14px;
             left: 18px;
         }
-
         .button-menu {
             top: 7px;
             right: 10px;
@@ -217,8 +214,11 @@
     }
 }
 
-@media (max-width: 720px) {
-    .app-header .header-follow {
-        display: none;
+@media (max-width: 768px) {
+    .app-header {
+        .header-dots,
+        .header-follow {
+            display: none !important;
+        }
     }
 }
