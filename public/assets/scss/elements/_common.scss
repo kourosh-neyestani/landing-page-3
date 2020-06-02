@@ -75,6 +75,16 @@
     }
 }
 
+@media (max-width: 992px) {
+    .el-slider-plr--15 {
+        &,
+        .slick-slide {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+}
+
 /*------------------------------------
     Element: Progress
 ------------------------------------*/

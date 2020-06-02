@@ -88,6 +88,13 @@
 
 @media (max-width: 768px) {
     .section-portfolio-1 {
+        .el-tabs-links {
+            li {
+                font-size: 10px;
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+        }
         .row-center {
             margin-left: -6px !important;
             margin-right: -6px !important;
