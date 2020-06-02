@@ -297,7 +297,7 @@
             margin-bottom: 15px;
         }
         h1 {
-            font-size: 36px !important;
+            font-size: 33px;
             line-height: 1.4;
         }
         h3 {
@@ -415,10 +415,7 @@
 }
 @media (max-width: 768px) {
     .el-circle-side {
-        left: 0;
-        right: 0;
-        opacity: 0.45;
-        border-radius: 0 !important;
+        display: none;
     }
 }
 /*------------------------------------
@@ -451,6 +448,7 @@
 .el-go-back {
     display: block;
     position: relative;
+    color: $base-1;
 
     .icon {
         top: 2px;
