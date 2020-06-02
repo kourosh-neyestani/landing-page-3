@@ -131,14 +131,14 @@
     height: 4px;
     display: inline-block;
     position: relative;
-    margin: 0 9px 20px;
+    margin: 0 9px 15px;
     background-color: $primary;
 
     &.divider-1 {
         width: 63px;
         height: 4px;
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         background: $primary;
     }
     &.divider-1-1 {
@@ -250,6 +250,7 @@
         color: var(--base-1);
         font-size: 36px;
         font-weight: 700;
+        margin-bottom: 15px;
     }
     .label {
         color: $primary;
@@ -293,7 +294,7 @@
 @media (max-width: 992px) {
     .el-heading {
         p {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         h1 {
             font-size: 36px !important;
