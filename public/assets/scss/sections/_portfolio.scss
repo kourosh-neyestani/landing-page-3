@@ -88,13 +88,13 @@
 
 @media (max-width: 768px) {
     .section-portfolio-1 {
-        .row {
-            margin-left: -6px;
-            margin-right: -6px;
-            margin-bottom: -12px;
+        .row-center {
+            margin-left: -6px !important;
+            margin-right: -6px !important;
+            margin-bottom: -12px !important;
             > * {
-                padding-left: 6px;
-                padding-right: 6px;
+                padding-left: 6px !important;
+                padding-right: 6px !important;
             }
         }
         .portfolio-item {
