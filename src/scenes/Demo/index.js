@@ -117,7 +117,7 @@ function Demo() {
                             <div className="display-full-screen">
                                 <div className="display-center">
                                     <header className="el-heading el-heading-side">
-                                        <span className="label text-dark">Miro ReactJS Template.</span>
+                                        <span className="label">Miro ReactJS Template.</span>
                                         <h1>React Multi Purpose Template</h1>
                                         <p>Welcome to Miro, Reactjs Multi-Purpose Website Templates, React Portfolio and Corporate Built With React JS. NO jQuery!</p>
                                     </header>
